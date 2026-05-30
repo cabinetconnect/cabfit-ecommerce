@@ -9,8 +9,8 @@ export function Hero() {
   const [adjustableLegTool, pantrySpacerBlocks, fillerSetbackJigs] = products;
   const proofItems = [
     {
-      title: "Made For Site Work",
-      detail: "Practical accessories built around real install problems.",
+      title: "Designed By Cabinetmakers",
+      detail: "Created to solve real installation and assembly challenges.",
       icon: Ruler
     },
     {
