@@ -3,7 +3,6 @@ import Image from "next/image";
 import { Container } from "@/components/ui/container";
 import { LinkButton } from "@/components/ui/button";
 import { products } from "@/lib/products";
-import { siteConfig } from "@/lib/site";
 
 export function Hero() {
   const [adjustableLegTool, pantrySpacerBlocks, fillerSetbackJigs] = products;
@@ -14,14 +13,6 @@ export function Hero() {
       <Container className="grid gap-10 py-12 sm:py-14 lg:grid-cols-[0.92fr_1.08fr] lg:items-center lg:py-20">
         <div>
           <div className="max-w-4xl">
-            <Image
-              alt={siteConfig.name}
-              className="mb-7 h-auto w-44 bg-white p-2 sm:w-52"
-              height={168}
-              priority
-              src={siteConfig.logo}
-              width={376}
-            />
             <p className="mb-4 inline-flex border border-white/15 bg-white/5 px-3 py-2 text-xs font-black uppercase text-brand-gold">
               Australian cabinet install accessories
             </p>
