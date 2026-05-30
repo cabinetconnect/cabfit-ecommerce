@@ -38,7 +38,7 @@ export function Hero() {
               Fit It Right
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/78 sm:text-xl">
-              Practical Install & Assembly Accessories For Cabinetmakers. Made For Real Installs. Shipping Australia-Wide.
+              Practical cabinet installation tools and assembly accessories for cabinetmakers. Designed to reduce measuring, improve consistency and speed up installations.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <LinkButton href="/shop" size="lg">
