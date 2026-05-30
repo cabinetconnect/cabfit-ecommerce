@@ -17,9 +17,9 @@ export function Footer() {
           <Image
             alt={siteConfig.name}
             className="h-auto w-40 bg-brand-neutral p-2"
-            height={136}
+            height={168}
             src={siteConfig.logo}
-            width={512}
+            width={376}
           />
           <p className="mt-5 max-w-md text-sm leading-6 text-white/75">
             Practical Install & Assembly Accessories For Cabinetmakers. Made For Real Installs. Shipping Australia-Wide.

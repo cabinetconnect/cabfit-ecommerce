@@ -32,11 +32,11 @@ export function ProductCard({ product }: ProductCardProps) {
   }
 
   return (
-    <article className="flex h-full flex-col border border-brand-border bg-white">
+    <article className="group flex h-full flex-col border border-brand-border bg-white transition-shadow hover:shadow-soft">
       <Link className="block bg-brand-neutral" href={`/products/${product.slug}`}>
         <Image
           alt={product.name}
-          className="aspect-[4/3] w-full object-contain p-4"
+          className="aspect-[4/3] w-full object-contain p-4 transition-transform duration-300 group-hover:scale-[1.03]"
           height={680}
           src={product.images[0]}
           width={900}
@@ -44,12 +44,25 @@ export function ProductCard({ product }: ProductCardProps) {
       </Link>
       <div className="flex flex-1 flex-col p-5">
         <div className="flex-1">
-          <h2 className="text-xl font-black text-brand-charcoal">
+          <p className="mb-3 text-xs font-black uppercase text-brand-gold">
+            Site-ready accessory
+          </p>
+          <h2 className="font-display text-2xl font-black leading-none text-brand-charcoal">
             <Link href={`/products/${product.slug}`}>{product.name}</Link>
           </h2>
           <p className="mt-3 line-clamp-3 text-sm leading-6 text-brand-muted">
             {product.description}
           </p>
+          <div className="mt-4 flex flex-wrap gap-2">
+            {product.benefits.slice(0, 2).map((benefit) => (
+              <span
+                className="border border-brand-border bg-brand-neutral px-2.5 py-1 text-xs font-bold text-brand-charcoal"
+                key={benefit}
+              >
+                {benefit}
+              </span>
+            ))}
+          </div>
           <p className="mt-4 text-lg font-black text-brand-charcoal">
             {formatCurrency(product.priceCents)}
           </p>

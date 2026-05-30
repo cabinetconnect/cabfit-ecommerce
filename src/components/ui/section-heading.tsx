@@ -17,11 +17,11 @@ export function SectionHeading({
   return (
     <div className={cn("max-w-3xl", className)}>
       {eyebrow ? (
-        <p className="mb-3 text-sm font-bold uppercase text-brand-gold">
+        <p className="mb-3 text-sm font-black uppercase text-brand-gold">
           {eyebrow}
         </p>
       ) : null}
-      <h2 className="text-3xl font-black text-brand-charcoal sm:text-4xl">
+      <h2 className="font-display text-4xl font-black leading-none text-brand-charcoal sm:text-5xl">
         {title}
       </h2>
       {children ? (

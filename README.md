@@ -88,6 +88,7 @@ The supplied CabFit logo is stored at:
 
 ```bash
 public/cabfit-logo.png
+public/cabfit-logo-wide.png
 ```
 
 Logo-derived design tokens:

@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { Roboto, Roboto_Condensed } from "next/font/google";
 import type { ReactNode } from "react";
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
@@ -6,6 +7,20 @@ import { SEO } from "@/components/seo";
 import { siteConfig } from "@/lib/site";
 import { seoKeywords } from "@/lib/seo";
 import "./globals.css";
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["400", "500", "700", "900"],
+  variable: "--font-roboto",
+  display: "swap"
+});
+
+const robotoCondensed = Roboto_Condensed({
+  subsets: ["latin"],
+  weight: ["700", "900"],
+  variable: "--font-roboto-condensed",
+  display: "swap"
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -30,9 +45,9 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/cabfit-logo.png",
-        width: 512,
-        height: 512,
+        url: "/cabfit-logo-wide.png",
+        width: 376,
+        height: 168,
         alt: "CabFit logo"
       }
     ]
@@ -41,7 +56,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "CabFit | Fit It Right",
     description: siteConfig.description,
-    images: ["/cabfit-logo.png"]
+    images: ["/cabfit-logo-wide.png"]
   }
 };
 
@@ -79,7 +94,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en-AU">
+    <html className={`${roboto.variable} ${robotoCondensed.variable}`} lang="en-AU">
       <body>
         <SEO data={[organizationSchema, websiteSchema]} />
         <Header />

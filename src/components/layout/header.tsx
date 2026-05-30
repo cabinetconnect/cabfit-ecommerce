@@ -1,6 +1,6 @@
 "use client";
 
-import { Menu, ShoppingCart, X } from "lucide-react";
+import { Menu, ShieldCheck, ShoppingCart, Truck, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -27,6 +27,19 @@ export function Header() {
   return (
     <>
       <header className="sticky top-0 z-40 border-b border-brand-border bg-brand-neutral/95 backdrop-blur">
+        <div className="bg-brand-charcoal text-white">
+          <Container className="flex min-h-9 flex-wrap items-center justify-center gap-x-5 gap-y-1 py-2 text-xs font-black uppercase sm:justify-between">
+            <span className="text-brand-gold">Fit It Right</span>
+            <span className="inline-flex items-center gap-2 text-white/80">
+              <Truck aria-hidden="true" size={15} />
+              Shipping Australia-Wide
+            </span>
+            <span className="hidden items-center gap-2 text-white/80 sm:inline-flex">
+              <ShieldCheck aria-hidden="true" size={15} />
+              Secure Stripe Payments
+            </span>
+          </Container>
+        </div>
         <Container className="flex h-20 items-center justify-between gap-4">
           <Link
             aria-label="CabFit home"
@@ -37,10 +50,10 @@ export function Header() {
             <Image
               alt={siteConfig.name}
               className="h-auto w-36 sm:w-40"
-              height={136}
+              height={168}
               priority
               src={siteConfig.logo}
-              width={512}
+              width={376}
             />
           </Link>
 
@@ -48,7 +61,7 @@ export function Header() {
             {navItems.map((item) => (
               <Link
                 className={cn(
-                  "text-sm font-bold text-brand-charcoal transition-colors hover:text-brand-gold",
+                  "text-sm font-black text-brand-charcoal transition-colors hover:text-brand-gold",
                   pathname === item.href && "text-brand-gold"
                 )}
                 href={item.href}

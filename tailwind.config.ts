@@ -23,12 +23,20 @@ const config: Config = {
       },
       fontFamily: {
         sans: [
-          "Inter",
+          "var(--font-roboto)",
+          "Roboto",
           "ui-sans-serif",
           "system-ui",
           "Segoe UI",
-          "Roboto",
           "Helvetica Neue",
+          "Arial",
+          "sans-serif"
+        ],
+        display: [
+          "var(--font-roboto-condensed)",
+          "Roboto Condensed",
+          "var(--font-roboto)",
+          "Roboto",
           "Arial",
           "sans-serif"
         ]

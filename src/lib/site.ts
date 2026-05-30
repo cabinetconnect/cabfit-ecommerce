@@ -5,7 +5,7 @@ export const siteConfig = {
   description:
     "Practical Install & Assembly Accessories For Cabinetmakers. Made For Real Installs. Shipping Australia-Wide.",
   location: "South Australia",
-  logo: "/cabfit-logo.png",
+  logo: "/cabfit-logo-wide.png",
   email: "support@cabfit.com.au",
   social: {
     instagram: "https://www.instagram.com/",
