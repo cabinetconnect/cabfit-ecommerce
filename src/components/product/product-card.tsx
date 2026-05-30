@@ -36,10 +36,9 @@ export function ProductCard({ product }: ProductCardProps) {
       <Link className="block bg-brand-neutral" href={`/products/${product.slug}`}>
         <Image
           alt={product.name}
-          className="aspect-[4/3] w-full object-cover"
+          className="aspect-[4/3] w-full object-contain p-4"
           height={680}
           src={product.images[0]}
-          unoptimized
           width={900}
         />
       </Link>

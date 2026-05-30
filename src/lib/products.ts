@@ -8,7 +8,7 @@ export const products: Product[] = [
     description:
       "A practical installation accessory designed to help cabinetmakers and installers adjust cabinet legs faster and more consistently during installation.",
     priceCents: 7900,
-    images: ["/products/adjustable-leg-adjustment-device.svg"],
+    images: ["/products/adjustable-leg-adjustment-device.jpg"],
     variants: [{ id: "standard", name: "Standard" }],
     benefits: ["Faster adjustments", "Consistent results", "Designed for site use"],
     featured: true,
@@ -25,7 +25,7 @@ export const products: Product[] = [
     description:
       "Spacer blocks designed to assist with pantry drawer box installation and spacing.",
     priceCents: 3900,
-    images: ["/products/pantry-drawer-box-spacer-blocks.svg"],
+    images: ["/products/pantry-drawer-box-spacer-blocks.jpg"],
     variants: [
       { id: "pattern-a", name: "Pattern A" },
       { id: "pattern-b", name: "Pattern B" },
@@ -46,7 +46,7 @@ export const products: Product[] = [
     description:
       "Designed to help cabinetmakers achieve consistent filler setbacks during cabinet installation.",
     priceCents: 4900,
-    images: ["/products/filler-setback-jigs.svg"],
+    images: ["/products/filler-setback-jigs.jpg"],
     variants: [
       { id: "standard", name: "Standard" },
       { id: "extended", name: "Extended" }

@@ -11,11 +11,10 @@ export function ProductGallery({ product }: ProductGalleryProps) {
       <div className="border border-brand-border bg-white">
         <Image
           alt={product.name}
-          className="aspect-square w-full object-cover"
+          className="aspect-square w-full object-contain p-4 sm:p-6"
           height={900}
           priority
           src={product.images[0]}
-          unoptimized
           width={900}
         />
       </div>
@@ -24,10 +23,9 @@ export function ProductGallery({ product }: ProductGalleryProps) {
           <div className="border border-brand-border bg-white p-2" key={image}>
             <Image
               alt={`${product.name} thumbnail`}
-              className="aspect-square w-full object-cover"
+              className="aspect-square w-full object-contain"
               height={240}
               src={image}
-              unoptimized
               width={240}
             />
           </div>

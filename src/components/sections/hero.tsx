@@ -46,7 +46,6 @@ export function Hero() {
                   className="aspect-square w-full object-contain"
                   height={680}
                   src={product.images[0]}
-                  unoptimized
                   width={900}
                 />
                 <p className="text-sm font-black text-brand-charcoal">

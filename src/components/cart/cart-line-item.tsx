@@ -21,10 +21,9 @@ export function CartLineItem({ item }: CartLineItemProps) {
       <Link className="bg-brand-neutral" href={`/products/${item.slug}`}>
         <Image
           alt={item.name}
-          className="aspect-square w-full object-cover"
+          className="aspect-square w-full object-contain p-2"
           height={160}
           src={item.image}
-          unoptimized
           width={160}
         />
       </Link>
