@@ -25,7 +25,10 @@ export const products: Product[] = [
     description:
       "Spacer blocks designed to assist with pantry drawer box installation and spacing.",
     priceCents: 3900,
-    images: ["/products/pantry-drawer-box-spacer-blocks.jpg"],
+    images: [
+      "/products/pantry-drawer-box-spacer-blocks.jpg",
+      "/products/pantry-drawer-box-spacer-blocks-application.jpg"
+    ],
     variants: [
       { id: "pattern-a", name: "Pattern A" },
       { id: "pattern-b", name: "Pattern B" },
